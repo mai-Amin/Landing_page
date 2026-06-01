@@ -15,7 +15,7 @@ const Footer = () => {
         borderTop: "1px solid #1e2a38",
         paddingTop: "60px",
         paddingBottom: "30px",
-        marginTop: "80px",
+       
       }}
     >
       <Container>

@@ -8,7 +8,7 @@ import Col from "react-bootstrap/esm/Col";
 
 const Portfolio = () => {
   return (
-    <section id="أعمالنا" style={{ padding: "80px 0" }}>
+    <section id="أعمالنا" style={{ padding: "80px 0"}}>
       <Container>
         <h2
           style={{
@@ -22,7 +22,7 @@ const Portfolio = () => {
         </h2>
 
         {/* استخدمنا الـ Carousel الخاص بـ Bootstrap كحل أنيق بدون Tailwind */}
-        <Carousel indicators={false} className="portfolio-carousel">
+        <Carousel indicators={false} className="portfolio-carousel ">
           {[0, 3].map((startIndex, i) => (
             <Carousel.Item key={i}>
               <Row className="g-4">

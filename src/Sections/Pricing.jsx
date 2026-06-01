@@ -13,7 +13,7 @@ const Pricing = () => {
       id="الأسعار"
       style={{ padding: "80px 0", position: "relative", overflow: "hidden" }}
     >
-      <div
+      {/* <div
         style={{
           position: "absolute",
           top: 0,
@@ -24,7 +24,7 @@ const Pricing = () => {
           borderRadius: "50%",
           filter: "blur(100px)",
         }}
-      ></div>
+      ></div> */}
 
       <Container>
         <div style={{ textAlign: "center", marginBottom: "60px" }}>
@@ -42,21 +42,23 @@ const Pricing = () => {
           </span>
         </div>
 
-        <Row className="align-items-center g-5">
+        <Row className="align-items-center ">
           {/* السبائك على اليمين */}
-          <Col lg={6} className="text-center">
+          <Col lg={4} className="text-center">
             <div className="ingots-container">
               {ingots.map((ingot, i) => (
-                <div key={i} className="ingot">
+                <div key={i} className="ingot pt-4">
                   <span>{ingot}</span>
                 </div>
               ))}
             </div>
-            <div className="price-circle">
+          </Col>
+          <Col lg={4} className="px-5 ">
+            <div className="price-circle ">
               <span
                 style={{
                   color: "var(--gold)",
-                  fontSize: "5rem",
+                  fontSize: "4.5rem",
                   fontWeight: "900",
                   lineHeight: 1,
                 }}
@@ -76,15 +78,16 @@ const Pricing = () => {
           </Col>
 
           {/* التفاصيل على اليسار */}
-          <Col lg={6}>
+          <Col lg={4} className="pe-5">
             <h3
               style={{
+                textAlign: "center",
                 fontWeight: "800",
-                marginBottom: "30px",
-                fontSize: "2rem",
+                marginBottom: "60px",
+                fontSize: "2.5rem",
               }}
             >
-              تفاصيل <span style={{ color: "var(--gold)" }}>العرض</span>
+              اقل سعر في مصر <br /><span style={{ color: "var(--gold)" }}>لمواقع و المتاجر الإلكترونيه</span>
             </h3>
             <div
               className="d-flex flex-column gap-3"
@@ -114,13 +117,6 @@ const Pricing = () => {
                 </div>
               ))}
             </div>
-            <a
-              href="#contact"
-              className="btn-gold"
-              style={{ padding: "15px 50px", fontSize: "1.2rem" }}
-            >
-              ابدأ مشروعك الآن
-            </a>
           </Col>
         </Row>
       </Container>

@@ -8,10 +8,10 @@ const CustomNavbar = () => (
     variant="dark"
     expand="lg"
     fixed="top"
-    className="py-3 shadow-sm"
+    className="py-2 shadow-sm px-3"
     style={{ backgroundColor: "#0a1118 !important" }}
   >
-    <Container>
+    
       <Navbar.Brand href="#home" className="fw-bold text-gold fs-3">
         {siteData.nav.logo}
       </Navbar.Brand>
@@ -30,7 +30,7 @@ const CustomNavbar = () => (
           </a>
         
       </Navbar.Collapse>
-    </Container>
+    
   </Navbar>
 );
 export default CustomNavbar;

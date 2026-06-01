@@ -12,7 +12,13 @@ function App() {
   return (
     <div style={{ backgroundColor: "var(--navy)", color: "white" }}>
       <Navbar />
-      <main>
+      <main
+        className="px-5"
+        style={{
+          background:
+            "linear-gradient(17deg, rgba(3, 3, 3, 1) 0%,  rgba(119, 97, 75, 0.95) 50%, rgba(5, 2, 2, 1) 100%)",
+        }}
+      >
         <Hero />
         <Features />
         <Solutions />
@@ -21,7 +27,6 @@ function App() {
         <Steps />
       </main>
       <Footer />
-      
     </div>
   );
 }

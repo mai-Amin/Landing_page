@@ -8,7 +8,7 @@ const Solutions = () => {
   return (
     <section
       id="خدماتنا"
-      style={{ padding: "80px 0", backgroundColor: "#0a1118" }}
+      style={{ padding: "80px 0" }}
     >
       <Container>
         <h2

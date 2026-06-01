@@ -22,7 +22,7 @@ const Features = () => {
         <Row className="p-0 ">
           {siteData.features.map((feature, i) => (
             <Col
-              className="p-0 m-0 border-1 card bg-dark"
+              className="p-0 m-0 border-1 card bg-dark gap-5"
               key={i}
               lg={2}
               md={4}

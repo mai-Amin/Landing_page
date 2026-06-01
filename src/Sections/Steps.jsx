@@ -2,8 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FiArrowLeft } from "react-icons/fi";
+// import { FiArrowLeft } from "react-icons/fi";
 import { siteData } from "../Data/siteData";
+import { TbArrowNarrowLeftDashed } from "react-icons/tb";
 
 const Steps = () => {
   return (
@@ -20,19 +21,6 @@ const Steps = () => {
           خطوات <span style={{ color: "var(--gold)" }}>العمل معنا</span>
         </h2>
 
-        <div style={{ position: "relative" }}>
-          <div
-            className="d-none d-lg-block"
-            style={{
-              position: "absolute",
-              top: "50px",
-              left: 0,
-              right: 0,
-              height: "2px",
-              backgroundColor: "#1e2a38",
-              zIndex: 1,
-            }}
-          ></div>
 
           <Row className="g-4">
             {siteData.steps.map((step, i) => (
@@ -70,15 +58,15 @@ const Steps = () => {
                       zIndex: 2,
                     }}
                   >
-                    <FiArrowLeft
-                      style={{ color: "var(--gold)", fontSize: "1.5rem" }}
+                    <TbArrowNarrowLeftDashed 
+                      style={{ color: "var(--gold)", fontSize: "2.4rem" }}
                     />
                   </div>
                 )}
               </Col>
             ))}
           </Row>
-        </div>
+        
       </Container>
     </section>
   );

@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap");
 
 :root {
   --navy: #0a1118;
   --navy-light: #121f2d;
-  --gold: #d4af37;
-  --gold-light: #e2b646;
+  --gold: #d1985f;
+  --gold-light: #dfc0a0;
   --white: #ffffff;
   --gray: #b0b8c4;
 }
 
 body {
-  font-family: 'Cairo', sans-serif;
-  background-color: var(--navy);
+  font-family: "Cairo", sans-serif;
   color: var(--white);
   margin: 0;
   padding: 0;
@@ -30,7 +29,7 @@ body {
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .btn-gold:hover {
   background-color: var(--gold-light);
@@ -62,9 +61,20 @@ body {
   border-bottom: 1px solid rgba(212, 175, 55, 0.1);
   padding: 15px 0;
 }
-.navbar-custom .nav-link { color: var(--gray) !important; margin: 0 10px; transition: color 0.3s; }
-.navbar-custom .nav-link:hover { color: var(--gold) !important; }
-.navbar-brand-custom { color: var(--gold) !important; font-weight: 900; font-size: 1.8rem; letter-spacing: 1px; }
+.navbar-custom .nav-link {
+  color: var(--gray) !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.navbar-custom .nav-link:hover {
+  color: var(--gold) !important;
+}
+.navbar-brand-custom {
+  color: var(--gold) !important;
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
 
 /* الـ Hero */
 .hero-section {
@@ -84,11 +94,19 @@ body {
   background: #222;
   border-radius: 12px;
   padding: 10px 10px 0 10px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   border: 1px solid #333;
 }
-.laptop-screen { border-radius: 8px; overflow: hidden; height: 350px; }
-.laptop-screen img { width: 100%; height: 100%; object-fit: cover; }
+.laptop-screen {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 350px;
+}
+.laptop-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .laptop-base {
   background: #ddd;
   height: 15px;
@@ -107,12 +125,20 @@ body {
   background: #222;
   border-radius: 25px;
   padding: 8px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
   border: 2px solid #444;
   z-index: 10;
 }
-.phone-screen { border-radius: 20px; overflow: hidden; height: 220px; }
-.phone-screen img { width: 100%; height: 100%; object-fit: cover; }
+.phone-screen {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 220px;
+}
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* الكروت المضيئة */
 .glow-card {
@@ -131,52 +157,94 @@ body {
 }
 
 /* كروت الحلول */
-.solution-card { border: 1px solid rgba(255,255,255,0.1); }
-.solution-card:hover { border-color: var(--gold); }
+.solution-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.solution-card:hover {
+  border-color: var(--gold);
+}
 
 /* الأعمال */
 .work-card {
-  position: relative;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
 }
-.work-card img { width: 100%; height: 280px; object-fit: cover; transition: transform 0.5s ease; }
-.work-card:hover img { transform: scale(1.1); }
-.work-overlay {
-  position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(10, 17, 24, 0.9), transparent);
-  opacity: 0; transition: opacity 0.4s ease;
-  display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;
+.work-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
-.work-card:hover .work-overlay { opacity: 1; }
+.work-card:hover img {
+  transform: scale(1.1);
+}
+.work-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(10, 17, 24, 0.9), transparent);
+  text-align: center;
+  padding: 20px;
+}
 
 /* السبائك */
-.ingots-container { position: relative; display: flex; justify-content: center; gap: 20px; margin-bottom: 40px; }
-.ingot {
-  background: linear-gradient(135deg, #f5d76e 0%, #d4af37 50%, #b8941e 100%);
-  color: #5a4210; font-weight: 800; padding: 20px; border-radius: 6px;
-  transform: perspective(500px) rotateY(-10deg); box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-  display: flex; align-items: center; justify-content: center; text-align: center;
-  height: 120px; width: 100px;
+.ingots-container {
+  position: relative;
 }
-.ingot span { transform: rotate(90deg); font-size: 0.9rem; text-shadow: 1px 1px 0 rgba(255,255,255,0.3); }
+.ingot {
+  background: linear-gradient(135deg, #c48c39 0%, #d89858 50%, #ca7c23 100%);
+  color: #5a4210;
+  font-weight: 800;
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  height: 80px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.ingot span {
+  transform: rotate(90deg);
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
 
 /* دائرة السعر */
 .price-circle {
-  width: 280px; height: 280px; border-radius: 50%;
-  border: 5px solid var(--gold); background-color: var(--navy);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 5px solid var(--gold);
+  background-color: var(--navy);
   box-shadow: 0 0 60px rgba(212, 175, 55, 0.3);
-  display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* الخطوات */
 .step-circle {
-  width: 100px; height: 100px; border-radius: 50%;
-  border: 2px solid var(--gold); background-color: var(--navy);
-  display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 20px; transition: all 0.3s ease; position: relative; z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
-.step-circle span { color: var(--gold); font-size: 2rem; font-weight: 900; }
-.step-item:hover .step-circle { background-color: var(--gold); }
-.step-item:hover .step-circle span { color: var(--navy); }
+.step-circle span {
+  color: var(--gold);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.step-item:hover .step-circle {
+  background-color: var(--gold);
+}
+.step-item:hover .step-circle span {
+  color: var(--navy);
+}
