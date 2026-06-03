@@ -13,9 +13,9 @@ const Hero = () => {
     <section
       id="الرئيسية"
       className="hero-section"
-      style={{ backgroundImage: `url(${bgImg})` }}
+      style={{ backgroundImage: `url(${bgImg})` , maxWidth:"100%" , backgroundSize:"cover", backgroundrepeat:"no-repeat" }}
     >
-      <div className="hero-overlay"></div>
+      
       <Container className="hero-content">
         <Row className="align-items-center">
           <Col lg={7} style={{ width: "75%" }}>
@@ -33,7 +33,7 @@ const Hero = () => {
               style={{
                 color: "var(--gray)",
                 fontSize: "1.2rem",
-                marginBottom: "40px",
+                marginBottom: "20px",
                 maxWidth: "600px",
               }}
             >
@@ -53,7 +53,7 @@ const Hero = () => {
               ))}
             </div>
 
-            <div className="d-flex gap-3 mt-4 flex-wrap">
+            <div className="d-flex gap-3 mt-5 flex-wrap">
               <a
                 href="#contact"
                 className="btn-gold"

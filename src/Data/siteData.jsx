@@ -14,12 +14,14 @@ import { FaShopify } from "react-icons/fa";
 export const siteData = {
   nav: {
     logo: "MSH-GROUP",
+    logoImg:
+      "https://lh3.googleusercontent.com/d/1AORf4J18Edi9M6prEUlqtORi54uLYNTG", //https://drive.google.com/file/d/1AORf4J18Edi9M6prEUlqtORi54uLYNTG/view?usp=sharing
     links: [
-      { name: "الرئيسية", href: "#hero" },
-      { name: "الأسعار", href: "#pricing" },
-      { name: "أعمالنا", href: "#portfolio" },
-      { name: "مميزاتنا", href: "#features" },
-      { name: "خطواتنا", href: "#steps" },
+      { name: "الرئيسية", href: "#الرئيسية" },
+      { name: "الأسعار", href: "#الأسعار" },
+      { name: "أعمالنا", href: "#أعمالنا" },
+      { name: "مميزاتنا", href: "#مميزاتنا" },
+      { name: "خطواتنا", href: "#خطواتنا" },
     ],
     cta: "تواصل الآن",
   },
@@ -30,7 +32,8 @@ export const siteData = {
     ctaPrimary: "تواصل الآن",
     ctaSecondary: "شاهد أعمالنا",
     bgImg:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      "https://lh3.googleusercontent.com/d/14btJeLYlU8VEcvXp7l0moTPATRm3WAmt",
+    // 14btJeLYlU8VEcvXp7l0moTPATRm3WAmt
   },
   features: [
     {

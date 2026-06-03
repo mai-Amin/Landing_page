@@ -1,9 +1,9 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import FeatureCard from '../Components/FeatureCard';
-import { siteData } from '../Data/siteData';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import FeatureCard from "../Components/FeatureCard";
+import { siteData } from "../Data/siteData";
 
 const Features = () => {
   return (
@@ -19,18 +19,16 @@ const Features = () => {
         >
           لماذا <span style={{ color: "var(--gold)" }}>تختارنا؟</span>
         </h2>
-        <Row className="p-0 ">
+        <Row className="p-0  ">
           {siteData.features.map((feature, i) => (
             <Col
-              className="p-0 m-0 border-1 card bg-dark gap-5"
+              className=" p-0 m-0 border-1 card bg-dark "
               key={i}
               lg={2}
               md={4}
+              sm={6}
             >
               <FeatureCard {...feature} />
-
-             
-
             </Col>
           ))}
         </Row>

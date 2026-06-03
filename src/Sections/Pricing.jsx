@@ -47,7 +47,7 @@ const Pricing = () => {
           <Col lg={4} className="text-center">
             <div className="ingots-container">
               {ingots.map((ingot, i) => (
-                <div key={i} className="ingot pt-4">
+                <div key={i} className="ingot ">
                   <span>{ingot}</span>
                 </div>
               ))}
