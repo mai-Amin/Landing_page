@@ -19,7 +19,7 @@ const Footer = () => {
       }}
     >
       <Container>
-        <Row className="g-5">
+        <Row className="g-5 m-0">
           <Col lg={4} md={6}>
             <h5
               style={{

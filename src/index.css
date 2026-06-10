@@ -139,7 +139,7 @@ transition: all 0.3s ease;
 transform: translateY(-5px);
 box-shadow: 0 0 30px rgba(209, 152, 95, 0.15);
 }
-
+/* 
 .work-card {
 position: relative;
 overflow: hidden;
@@ -157,6 +157,29 @@ transition: transform 0.5s ease;
 .work-card:hover img {
 transform: scale(1.05);
 }
+ */
+
+.work-card {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-bottom: 15px; /* مسافة أمان سفلية للموبايل */
+}
+
+.work-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.work-card:hover img {
+  transform: scale(1.05);
+}
+
+
 
 
 
@@ -250,4 +273,10 @@ padding: 30px;
 border-radius: 10px;
 background: rgba(0, 0, 0, 0.6);
 }
+
+.feature-row{
+  max-width:400px;
+  margin: 0 auto !important;
+}
+
 }

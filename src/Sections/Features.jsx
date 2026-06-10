@@ -19,14 +19,14 @@ const Features = () => {
         >
           لماذا <span style={{ color: "var(--gold)" }}>تختارنا؟</span>
         </h2>
-        <Row className="p-0  ">
+        <Row className="p-0 feature-row " style={{border: '0.5px solid var(--gold-light) ' , borderRadius:" 10px "}}>
           {siteData.features.map((feature, i) => (
             <Col
-              className=" p-0 m-0 border-1 card bg-dark "
+              className=" p-0 m-0 border-1  rounded-2 card bg-dark "
               key={i}
               lg={2}
               md={4}
-              sm={6}
+              sm={4}
             >
               <FeatureCard {...feature} />
             </Col>

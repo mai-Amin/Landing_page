@@ -21,7 +21,7 @@ const FeatureCard = ({ icon: Icon, title, desc }) => {
         {title}
       </h5>
       <p style={{ color: "var(--gray)", fontSize: "0.9rem", margin: 0 }}>
-        {desc}
+        {/* {desc} */}
         <div
           className="d-none d-md-block" // يختفي في الشاشات الصغيرة لتجنب تشوه التصميم
           style={{
